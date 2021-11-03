@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS People (
   first_name TEXT NOT NULL,
   last_name TEXT,
   email TEXT NOT NULL,
-  phone TEXT
+  phone TEXT,
   password TEXT NOT NULL,
   address TEXT,
   city TEXT,
@@ -51,3 +51,9 @@ CREATE TABLE IF NOT EXISTS Student_Cohort_Registration (
   FOREIGN KEY (cohort_id)
     REFERENCES Cohort (cohort_id)
 );
+
+-- INSERT INTO Cohort (instructor_id, course_id, start_date, end_date)
+-- VALUES (5, 1, "2021-11-20", "2022-06-05")
+
+-- INSERT INTO Student_Cohort_Registration (student_id, cohort_id, registration_date)
+-- VALUES (8, 1, "2021-11-14")
